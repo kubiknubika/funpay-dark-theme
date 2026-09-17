@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FunPay Dark Theme</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">F</div>
+        <div>
+          <h1>FunPay Dark</h1>
+          <p>Тёмная тема для funpay.com</p>
+        </div>
+      </div>
+
+      <label class="switch-row" for="enabled">
+        <span>
+          <strong>Тёмная тема</strong>
+          <small id="status">Включена</small>
+        </span>
+        <input id="enabled" type="checkbox" checked>
+        <span class="switch" aria-hidden="true"><span></span></span>
+      </label>
+
+      <p class="hint">Настройка применяется сразу и сохраняется автоматически.</p>
+      <div class="footer">FunPay Dark Theme <span>v1.0.0</span></div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,509 @@
+/* FunPay Dark Theme — variables are scoped to avoid changing other sites. */
+html[data-funpay-dark="true"] {
+  color-scheme: dark;
+  --fp-bg: #0d0f12;
+  --fp-bg-deep: #090b0e;
+  --fp-surface: #15181d;
+  --fp-surface-2: #1b2027;
+  --fp-surface-3: #222933;
+  --fp-border: #2c333d;
+  --fp-border-soft: #232a33;
+  --fp-text: #e8edf3;
+  --fp-text-soft: #aab4c1;
+  --fp-text-muted: #7f8a98;
+  --fp-blue: #5c9be6;
+  --fp-blue-hover: #77b1f5;
+  --fp-green: #62c58a;
+  --fp-red: #ed7373;
+  --fp-shadow: 0 4px 18px rgba(0, 0, 0, .24);
+}
+
+html[data-funpay-dark="false"] {
+  color-scheme: light;
+}
+
+html[data-funpay-dark="true"],
+html[data-funpay-dark="true"] body {
+  background: var(--fp-bg) !important;
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] body,
+html[data-funpay-dark="true"] input,
+html[data-funpay-dark="true"] button,
+html[data-funpay-dark="true"] select,
+html[data-funpay-dark="true"] textarea {
+  color: var(--fp-text);
+}
+
+html[data-funpay-dark="true"] a {
+  color: var(--fp-blue);
+}
+
+html[data-funpay-dark="true"] a:hover,
+html[data-funpay-dark="true"] a:focus {
+  color: var(--fp-blue-hover);
+}
+
+/* Main layout and header */
+html[data-funpay-dark="true"] .wrapper,
+html[data-funpay-dark="true"] .wrapper-content,
+html[data-funpay-dark="true"] #content,
+html[data-funpay-dark="true"] .content-promo,
+html[data-funpay-dark="true"] .content-lots,
+html[data-funpay-dark="true"] .content-chat,
+html[data-funpay-dark="true"] .content-with-cd,
+html[data-funpay-dark="true"] .content-with-cd-wide,
+html[data-funpay-dark="true"] .bg-light-color {
+  background-color: var(--fp-bg) !important;
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] #header,
+html[data-funpay-dark="true"] .navbar,
+html[data-funpay-dark="true"] .navbar-default,
+html[data-funpay-dark="true"] .navbar-default .navbar-collapse,
+html[data-funpay-dark="true"] .navbar-default .navbar-form,
+html[data-funpay-dark="true"] .nav-container {
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .navbar-default .navbar-brand,
+html[data-funpay-dark="true"] .navbar-default .navbar-text,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > li > a,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > .open > a,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > .active > a {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+}
+
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > li > a:hover,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > li > a:focus,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > .open > a:hover,
+html[data-funpay-dark="true"] .navbar-default .navbar-nav > .active > a:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .navbar-default .navbar-toggle {
+  border-color: var(--fp-border) !important;
+  background: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .navbar-default .navbar-toggle:hover,
+html[data-funpay-dark="true"] .navbar-default .navbar-toggle:focus {
+  background-color: var(--fp-surface-3) !important;
+}
+
+html[data-funpay-dark="true"] .navbar-default .navbar-toggle .icon-bar {
+  background-color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .logo-color {
+  filter: brightness(0) invert(1);
+  opacity: .94;
+}
+
+/* Cards, panels, offers and chat */
+html[data-funpay-dark="true"] .panel,
+html[data-funpay-dark="true"] .panel-default,
+html[data-funpay-dark="true"] .panel-heading,
+html[data-funpay-dark="true"] .panel-body,
+html[data-funpay-dark="true"] .panel-collapse,
+html[data-funpay-dark="true"] .offer,
+html[data-funpay-dark="true"] .offer-promo,
+html[data-funpay-dark="true"] .showcase,
+html[data-funpay-dark="true"] .chat,
+html[data-funpay-dark="true"] .chat-full-container,
+html[data-funpay-dark="true"] .chat-header,
+html[data-funpay-dark="true"] .chat-detail,
+html[data-funpay-dark="true"] .chat-not-selected,
+html[data-funpay-dark="true"] .bookmarks-empty,
+html[data-funpay-dark="true"] .bookmarks-nonempty {
+  background-color: var(--fp-surface) !important;
+  color: var(--fp-text) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: var(--fp-shadow);
+}
+
+html[data-funpay-dark="true"] .panel-heading,
+html[data-funpay-dark="true"] .chat-header,
+html[data-funpay-dark="true"] .chat-control,
+html[data-funpay-dark="true"] .showcase-filters,
+html[data-funpay-dark="true"] .showcase-filter-text,
+html[data-funpay-dark="true"] .showcase-filter-input {
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .panel-title,
+html[data-funpay-dark="true"] .game-title,
+html[data-funpay-dark="true"] .lot-field,
+html[data-funpay-dark="true"] .media-user-name,
+html[data-funpay-dark="true"] h1,
+html[data-funpay-dark="true"] h2,
+html[data-funpay-dark="true"] h3,
+html[data-funpay-dark="true"] h4,
+html[data-funpay-dark="true"] h5,
+html[data-funpay-dark="true"] h6 {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .text-muted,
+html[data-funpay-dark="true"] .title-mini,
+html[data-funpay-dark="true"] .promo-game-list-title,
+html[data-funpay-dark="true"] .rating-mini-count,
+html[data-funpay-dark="true"] .chat-not-selected-info,
+html[data-funpay-dark="true"] small {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .text-main {
+  color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .chat-message-list,
+html[data-funpay-dark="true"] .chat-message-container,
+html[data-funpay-dark="true"] .chat-detail-list,
+html[data-funpay-dark="true"] .custom-scroll {
+  scrollbar-color: var(--fp-surface-3) var(--fp-surface);
+}
+
+/* Chat contacts list */
+html[data-funpay-dark="true"] .chat-contacts,
+html[data-funpay-dark="true"] .chat-full-header,
+html[data-funpay-dark="true"] .contact-list {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .chat-full-header {
+  border-bottom-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .chat-full-header h1 {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] a.contact-item,
+html[data-funpay-dark="true"] .contact-item {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-bottom-color: var(--fp-border-soft) !important;
+}
+
+html[data-funpay-dark="true"] a.contact-item:hover,
+html[data-funpay-dark="true"] .contact-item:hover,
+html[data-funpay-dark="true"] a.contact-item:focus {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .contact-item .media-user-name {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .contact-item-message {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .contact-item-time {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .contact-item.active,
+html[data-funpay-dark="true"] .contact-item.active:hover,
+html[data-funpay-dark="true"] .contact-item.active:focus {
+  color: #fff !important;
+  background-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .contact-item.active > div,
+html[data-funpay-dark="true"] .contact-item.active .media-user-name,
+html[data-funpay-dark="true"] .contact-item.active .contact-item-message,
+html[data-funpay-dark="true"] .contact-item.active .contact-item-time {
+  color: #fff !important;
+}
+
+html[data-funpay-dark="true"] .contact-item.unread,
+html[data-funpay-dark="true"] .contact-item.unread:hover,
+html[data-funpay-dark="true"] .contact-item.unread:focus {
+  color: #fff !important;
+  background-color: #8a5a18 !important;
+}
+
+html[data-funpay-dark="true"] .contact-item.unread > div,
+html[data-funpay-dark="true"] .contact-item.unread .contact-item-message,
+html[data-funpay-dark="true"] .contact-item.unread .contact-item-time {
+  color: #fff !important;
+}
+
+/* Chat date separators */
+html[data-funpay-dark="true"] .chat-message-list-date {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .chat-message-list-date::before {
+  background-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .chat-message-list-date .inside {
+  color: var(--fp-text-muted) !important;
+  background-color: var(--fp-surface) !important;
+}
+
+/* User menu */
+html[data-funpay-dark="true"] a.user-link-dropdown,
+html[data-funpay-dark="true"] a.user-link-dropdown:hover,
+html[data-funpay-dark="true"] a.user-link-dropdown:focus {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+}
+
+html[data-funpay-dark="true"] a.user-link-dropdown .user-link-name {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] a.user-link-dropdown .user-link-desc {
+  color: var(--fp-text-muted) !important;
+}
+
+/* Forms and controls */
+html[data-funpay-dark="true"] .form-control,
+html[data-funpay-dark="true"] .form-control-box,
+html[data-funpay-dark="true"] .form-inline input,
+html[data-funpay-dark="true"] .form-inline select,
+html[data-funpay-dark="true"] .form-inline textarea,
+html[data-funpay-dark="true"] input:not([type="checkbox"]):not([type="radio"]),
+html[data-funpay-dark="true"] select,
+html[data-funpay-dark="true"] textarea {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .18) !important;
+}
+
+html[data-funpay-dark="true"] .form-control:focus,
+html[data-funpay-dark="true"] input:focus,
+html[data-funpay-dark="true"] select:focus,
+html[data-funpay-dark="true"] textarea:focus {
+  border-color: var(--fp-blue) !important;
+  box-shadow: 0 0 0 2px rgba(92, 155, 230, .18) !important;
+}
+
+html[data-funpay-dark="true"] ::placeholder {
+  color: #738091 !important;
+  opacity: 1;
+}
+
+html[data-funpay-dark="true"] .checkbox,
+html[data-funpay-dark="true"] .radio-box-value,
+html[data-funpay-dark="true"] .lot-field-radio-box,
+html[data-funpay-dark="true"] .checkbox-switch {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .btn-default,
+html[data-funpay-dark="true"] .btn-gray,
+html[data-funpay-dark="true"] .btn-dark,
+html[data-funpay-dark="true"] .btn-info,
+html[data-funpay-dark="true"] .filter-btn-container,
+html[data-funpay-dark="true"] button:not(.btn-primary):not(.btn-link) {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .btn-default:hover,
+html[data-funpay-dark="true"] .btn-gray:hover,
+html[data-funpay-dark="true"] .btn-dark:hover,
+html[data-funpay-dark="true"] .btn-info:hover,
+html[data-funpay-dark="true"] button:not(.btn-primary):not(.btn-link):hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: #3b4653 !important;
+}
+
+html[data-funpay-dark="true"] .btn-primary,
+html[data-funpay-dark="true"] .offer-btn {
+  color: #fff !important;
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .btn-primary:hover,
+html[data-funpay-dark="true"] .offer-btn:hover {
+  background-color: #438bd8 !important;
+  border-color: #438bd8 !important;
+}
+
+html[data-funpay-dark="true"] .btn-link {
+  color: var(--fp-blue) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Menus, dropdowns and modals */
+html[data-funpay-dark="true"] .dropdown-menu,
+html[data-funpay-dark="true"] .modal-content,
+html[data-funpay-dark="true"] .modal-header,
+html[data-funpay-dark="true"] .modal-body,
+html[data-funpay-dark="true"] .modal-footer,
+html[data-funpay-dark="true"] .banner-cookie-consent,
+html[data-funpay-dark="true"] .modal-cookie-consent {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: var(--fp-shadow);
+}
+
+html[data-funpay-dark="true"] .dropdown-menu > li > a,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-item {
+  color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .dropdown-menu > li > a:hover,
+html[data-funpay-dark="true"] .dropdown-menu > li > a:focus,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-item:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .divider,
+html[data-funpay-dark="true"] hr,
+html[data-funpay-dark="true"] .modal-header,
+html[data-funpay-dark="true"] .modal-footer {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .close {
+  color: var(--fp-text-soft) !important;
+  text-shadow: none !important;
+  opacity: .85;
+}
+
+html[data-funpay-dark="true"] .close:hover {
+  color: #fff !important;
+  opacity: 1;
+}
+
+/* Lots, tables, filters and separators */
+html[data-funpay-dark="true"] table,
+html[data-funpay-dark="true"] .table,
+html[data-funpay-dark="true"] .tc,
+html[data-funpay-dark="true"] .tc-header,
+html[data-funpay-dark="true"] .tc-item,
+html[data-funpay-dark="true"] .tc-desc,
+html[data-funpay-dark="true"] .tc-price,
+html[data-funpay-dark="true"] .tc-user,
+html[data-funpay-dark="true"] .showcase-table {
+  color: var(--fp-text-soft) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .table > thead > tr > th,
+html[data-funpay-dark="true"] .table > tbody > tr > th,
+html[data-funpay-dark="true"] .table > tfoot > tr > th,
+html[data-funpay-dark="true"] .table > thead > tr > td,
+html[data-funpay-dark="true"] .table > tbody > tr > td,
+html[data-funpay-dark="true"] .table > tfoot > tr > td,
+html[data-funpay-dark="true"] .tc-header,
+html[data-funpay-dark="true"] .tc-item {
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border-soft) !important;
+}
+
+html[data-funpay-dark="true"] .table-hover > tbody > tr:hover > td,
+html[data-funpay-dark="true"] .table-hover > tbody > tr:hover > th,
+html[data-funpay-dark="true"] .tc-item:hover,
+html[data-funpay-dark="true"] .offer:hover {
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .lot-field-input,
+html[data-funpay-dark="true"] .lot-fields,
+html[data-funpay-dark="true"] .filter-container,
+html[data-funpay-dark="true"] .showcase-filters-toggle {
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .alert,
+html[data-funpay-dark="true"] .block-info {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .alert-success {
+  color: #9ce5b8 !important;
+  background-color: rgba(52, 125, 82, .2) !important;
+  border-color: rgba(98, 197, 138, .35) !important;
+}
+
+html[data-funpay-dark="true"] .alert-danger,
+html[data-funpay-dark="true"] .alert-warning {
+  color: #ffaaaa !important;
+  background-color: rgba(135, 53, 53, .2) !important;
+  border-color: rgba(237, 115, 115, .35) !important;
+}
+
+/* Homepage promo blocks */
+html[data-funpay-dark="true"] .promo-game-list,
+html[data-funpay-dark="true"] .promo-game-list-header,
+html[data-funpay-dark="true"] .promo-games-all,
+html[data-funpay-dark="true"] .promo-games-filter,
+html[data-funpay-dark="true"] .promo-abc,
+html[data-funpay-dark="true"] .social-statistic-info {
+  background-color: var(--fp-surface) !important;
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .promo-game-item:hover,
+html[data-funpay-dark="true"] .promo-games-all:hover {
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .cd-satellite {
+  color: var(--fp-text) !important;
+  background-color: rgba(21, 24, 29, .9) !important;
+}
+
+/* Footer, selection, scrollbar */
+html[data-funpay-dark="true"] #footer,
+html[data-funpay-dark="true"] .wrapper-footer,
+html[data-funpay-dark="true"] .footer-block,
+html[data-funpay-dark="true"] .footer-block-strings {
+  color: var(--fp-text-muted) !important;
+  background-color: var(--fp-bg-deep) !important;
+  border-color: var(--fp-border-soft) !important;
+}
+
+html[data-funpay-dark="true"] ::selection {
+  color: #fff;
+  background: #356ca7;
+}
+
+html[data-funpay-dark="true"] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html[data-funpay-dark="true"] ::-webkit-scrollbar-track {
+  background: var(--fp-bg-deep);
+}
+
+html[data-funpay-dark="true"] ::-webkit-scrollbar-thumb {
+  background: #303944;
+  border: 2px solid var(--fp-bg-deep);
+  border-radius: 999px;
+}
+
+html[data-funpay-dark="true"] ::-webkit-scrollbar-thumb:hover {
+  background: #435264;
+}
