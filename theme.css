@@ -1060,3 +1060,49 @@ html[data-funpay-dark="true"] .chat .form-control:focus,
 html[data-funpay-dark="true"] .note-editable:focus {
   outline: none !important;
 }
+
+/* Reviews (user profile pages) */
+html[data-funpay-dark="true"] .review-item,
+html[data-funpay-dark="true"] .review-list,
+html[data-funpay-dark="true"] .reviews-list,
+html[data-funpay-dark="true"] .review-item-row {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .review-item-row,
+html[data-funpay-dark="true"] .review-item-text,
+html[data-funpay-dark="true"] .review-item-date,
+html[data-funpay-dark="true"] .review-item-rating,
+html[data-funpay-dark="true"] .review-item-stars {
+  color: var(--fp-text-soft) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Ответ продавца — вложенный блок, раньше оставался белым с белым текстом */
+html[data-funpay-dark="true"] .review-item-answer,
+html[data-funpay-dark="true"] .review-compiled-reply,
+html[data-funpay-dark="true"] .review-item-answer .review-compiled-reply {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+  border-radius: 6px;
+}
+
+html[data-funpay-dark="true"] .review-item-answer a,
+html[data-funpay-dark="true"] .review-compiled-reply a,
+html[data-funpay-dark="true"] .review-item-text a {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .review-item-answer .h5,
+html[data-funpay-dark="true"] .review-item-row .h5,
+html[data-funpay-dark="true"] .review-item-row .h4 {
+  color: var(--fp-text) !important;
+}
+
+/* Любая светлая рамка внутри блока отзывов */
+html[data-funpay-dark="true"] [class*="review-"] {
+  border-color: var(--fp-border) !important;
+}
