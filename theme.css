@@ -507,3 +507,783 @@ html[data-funpay-dark="true"] ::-webkit-scrollbar-thumb {
 html[data-funpay-dark="true"] ::-webkit-scrollbar-thumb:hover {
   background: #435264;
 }
+
+/* Rich-text editor (Summernote) — support tickets and comments */
+html[data-funpay-dark="true"] .note-editor,
+html[data-funpay-dark="true"] .note-editor.note-frame,
+html[data-funpay-dark="true"] .note-editor.card,
+html[data-funpay-dark="true"] .note-frame > .card-header,
+html[data-funpay-dark="true"] .note-editor .note-toolbar,
+html[data-funpay-dark="true"] .note-editor .note-editing-area {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-toolbar {
+  background-color: var(--fp-surface-2) !important;
+  border-bottom: 1px solid var(--fp-border) !important;
+}
+
+/* Editable area itself: Summernote paints it white with dark text by default. */
+html[data-funpay-dark="true"] .note-editor .note-editable,
+html[data-funpay-dark="true"] .note-editor .note-editing-area .note-editable,
+html[data-funpay-dark="true"] .note-editable.card-block,
+html[data-funpay-dark="true"] .note-editable[contenteditable="true"],
+html[data-funpay-dark="true"] [contenteditable="true"]:not(.note-codable) {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--fp-border) !important;
+  caret-color: var(--fp-text) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-editable:focus {
+  border-color: var(--fp-border) !important;
+  box-shadow: inset 0 0 0 1px var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-placeholder,
+html[data-funpay-dark="true"] .note-placeholder {
+  color: #738091 !important;
+  opacity: 1;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-codable {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-bg-deep) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Toolbar buttons */
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn,
+html[data-funpay-dark="true"] .note-editor .note-btn.btn-outline-secondary,
+html[data-funpay-dark="true"] .note-editor .note-btn.btn-light {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn:hover,
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn:focus,
+html[data-funpay-dark="true"] .note-editor .note-btn.btn-outline-secondary:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn.active,
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn:active {
+  color: #fff !important;
+  background-color: #356ca7 !important;
+  border-color: #356ca7 !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-toolbar .note-btn-group,
+html[data-funpay-dark="true"] .note-editor .note-toolbar .btn-group {
+  border-color: var(--fp-border-soft) !important;
+}
+
+/* Toolbar dropdowns and popovers */
+html[data-funpay-dark="true"] .note-editor .note-dropdown-menu,
+html[data-funpay-dark="true"] .note-dropdown-menu {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: var(--fp-shadow) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-dropdown-menu .dropdown-item,
+html[data-funpay-dark="true"] .note-editor .note-dropdown-menu a {
+  color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-dropdown-menu .dropdown-item:hover,
+html[data-funpay-dark="true"] .note-editor .note-dropdown-menu a:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .note-popover,
+html[data-funpay-dark="true"] .note-popover .popover-body,
+html[data-funpay-dark="true"] .note-popover .note-popover-content {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-popover .popover-arrow::before,
+html[data-funpay-dark="true"] .note-popover .popover-arrow::after {
+  border-top-color: var(--fp-border) !important;
+  border-bottom-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-popover a {
+  color: var(--fp-blue) !important;
+}
+
+/* Dropzone, status bar and resizer */
+html[data-funpay-dark="true"] .note-editor .note-dropzone {
+  color: var(--fp-text-soft) !important;
+  background-color: rgba(9, 11, 14, .86) !important;
+  border-color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-dropzone .note-dropzone-message {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-statusbar,
+html[data-funpay-dark="true"] .note-editor .note-resizebar {
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-resizebar .note-icon-bar {
+  border-top-color: #4a5663 !important;
+}
+
+html[data-funpay-dark="true"] .note-editor .note-resizebar:hover .note-icon-bar {
+  border-top-color: var(--fp-text-soft) !important;
+}
+
+/* Content typing inside the editor */
+html[data-funpay-dark="true"] .note-editable a {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable a:hover,
+html[data-funpay-dark="true"] .note-editable a:focus {
+  color: var(--fp-blue-hover) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable blockquote {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-left: 3px solid var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable pre,
+html[data-funpay-dark="true"] .note-editable code {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-bg-deep) !important;
+  border: 1px solid var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable table,
+html[data-funpay-dark="true"] .note-editable td,
+html[data-funpay-dark="true"] .note-editable th {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable hr {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .note-editable img {
+  max-width: 100%;
+}
+
+/* Editor dialogs (link / image / video) */
+html[data-funpay-dark="true"] .note-modal .modal-content,
+html[data-funpay-dark="true"] .note-modal .modal-header,
+html[data-funpay-dark="true"] .note-modal .modal-body,
+html[data-funpay-dark="true"] .note-modal .modal-footer {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Support portal (support.funpay.com — Bootstrap 5) */
+html[data-funpay-dark="true"] .ticket-card,
+html[data-funpay-dark="true"] .ticket-main-panel,
+html[data-funpay-dark="true"] .ticket-list,
+html[data-funpay-dark="true"] .ticket-comments,
+html[data-funpay-dark="true"] .comment-form-wrapper,
+html[data-funpay-dark="true"] .comment-form,
+html[data-funpay-dark="true"] .search-form {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-info-panel,
+html[data-funpay-dark="true"] .sticky-info-panel {
+  color: var(--fp-text) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-main-panel,
+html[data-funpay-dark="true"] .ticket-comments,
+html[data-funpay-dark="true"] .comment-form-wrapper,
+html[data-funpay-dark="true"] .search-form {
+  background-color: transparent !important;
+}
+
+/* Ticket list rows */
+html[data-funpay-dark="true"] .ticket-item {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item:hover,
+html[data-funpay-dark="true"] .ticket-item:focus,
+html[data-funpay-dark="true"] .ticket-item.active {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item .text-primary {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item .text-secondary {
+  color: var(--fp-text-muted) !important;
+}
+
+/* Single ticket: comments */
+html[data-funpay-dark="true"] .ticket-head-buttons,
+html[data-funpay-dark="true"] .ticket-comment,
+html[data-funpay-dark="true"] .comment-container,
+html[data-funpay-dark="true"] .comment-author,
+html[data-funpay-dark="true"] .comment-text {
+  color: var(--fp-text) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .comment-body,
+html[data-funpay-dark="true"] .bg-light-subtle {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .bg-primary-subtle {
+  color: var(--fp-text) !important;
+  background-color: rgba(53, 108, 167, .22) !important;
+  border-color: rgba(92, 155, 230, .35) !important;
+}
+
+html[data-funpay-dark="true"] .comment-username .username,
+html[data-funpay-dark="true"] .comment-author .username {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .comment-username span:not(.username),
+html[data-funpay-dark="true"] .comment-author span:not(.username) {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .comment-text a,
+html[data-funpay-dark="true"] .comment-body a {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .comment-fake-input {
+  color: #738091 !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .comment-fake-input:hover,
+html[data-funpay-dark="true"] .comment-fake-input:focus {
+  border-color: var(--fp-blue) !important;
+}
+
+/* Bootstrap 5 buttons on the portal (outline/light variants) */
+/* body в селекторе нужен, чтобы гарантированно перебить общее правило для
+   button:not(.btn-primary):not(.btn-link) выше по файлу, не полагаясь на порядок. */
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary,
+html[data-funpay-dark="true"] body a.btn.btn-outline-primary {
+  color: var(--fp-blue) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-blue) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary:hover,
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary:focus,
+html[data-funpay-dark="true"] body a.btn.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary,
+html[data-funpay-dark="true"] body button.btn.btn-light,
+html[data-funpay-dark="true"] body a.btn.btn-outline-secondary,
+html[data-funpay-dark="true"] body a.btn.btn-light {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary:hover,
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary:focus,
+html[data-funpay-dark="true"] body button.btn.btn-light:hover,
+html[data-funpay-dark="true"] body button.btn.btn-light:focus,
+html[data-funpay-dark="true"] body a.btn.btn-outline-secondary:hover,
+html[data-funpay-dark="true"] body a.btn.btn-light:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: #3b4653 !important;
+}
+
+html[data-funpay-dark="true"] body .btn.btn-outline-danger,
+html[data-funpay-dark="true"] body button.btn.btn-outline-danger {
+  color: var(--fp-red) !important;
+  background-color: transparent !important;
+  border-color: rgba(237, 115, 115, .55) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body .btn.btn-outline-danger:hover,
+html[data-funpay-dark="true"] body .btn.btn-outline-danger:focus,
+html[data-funpay-dark="true"] body button.btn.btn-outline-danger:hover {
+  color: #fff !important;
+  background-color: #a83c3c !important;
+  border-color: #a83c3c !important;
+}
+
+/* Badges / status pills */
+html[data-funpay-dark="true"] .badge {
+  color: var(--fp-text) !important;
+  border: 1px solid transparent;
+}
+
+html[data-funpay-dark="true"] .badge.bg-success,
+html[data-funpay-dark="true"] .bg-success.badge {
+  color: #9ce5b8 !important;
+  background-color: rgba(52, 125, 82, .28) !important;
+  border-color: rgba(98, 197, 138, .4) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-danger,
+html[data-funpay-dark="true"] .bg-danger.badge,
+html[data-funpay-dark="true"] .badge.bg-warning,
+html[data-funpay-dark="true"] .bg-warning.badge {
+  color: #ffb4b4 !important;
+  background-color: rgba(135, 53, 53, .28) !important;
+  border-color: rgba(237, 115, 115, .4) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-secondary,
+html[data-funpay-dark="true"] .bg-secondary.badge,
+html[data-funpay-dark="true"] .badge.bg-light,
+html[data-funpay-dark="true"] .bg-light.badge {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-primary,
+html[data-funpay-dark="true"] .bg-primary.badge {
+  color: #cfe4fb !important;
+  background-color: rgba(53, 108, 167, .45) !important;
+  border-color: rgba(92, 155, 230, .45) !important;
+}
+
+/* Bootstrap 5 utilities that would otherwise stay light */
+html[data-funpay-dark="true"] .bg-white,
+html[data-funpay-dark="true"] .bg-light,
+html[data-funpay-dark="true"] .bg-body,
+html[data-funpay-dark="true"] .bg-body-tertiary,
+html[data-funpay-dark="true"] .bg-body-secondary {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .text-primary {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .text-secondary {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .text-dark,
+html[data-funpay-dark="true"] .text-body,
+html[data-funpay-dark="true"] .text-body-emphasis {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .text-body-secondary,
+html[data-funpay-dark="true"] .text-body-tertiary,
+html[data-funpay-dark="true"] .text-black-50 {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .border,
+html[data-funpay-dark="true"] .border-top,
+html[data-funpay-dark="true"] .border-bottom,
+html[data-funpay-dark="true"] .border-start,
+html[data-funpay-dark="true"] .border-end {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .card,
+html[data-funpay-dark="true"] .card-header,
+html[data-funpay-dark="true"] .card-body,
+html[data-funpay-dark="true"] .list-group-item,
+html[data-funpay-dark="true"] .accordion-item,
+html[data-funpay-dark="true"] .accordion-button,
+html[data-funpay-dark="true"] .accordion-button:not(.collapsed) {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .accordion-button:not(.collapsed) {
+  background-color: var(--fp-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .input-group-text {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .form-check-input {
+  background-color: var(--fp-surface-3) !important;
+  border-color: #4a5663 !important;
+}
+
+html[data-funpay-dark="true"] .form-check-input:checked {
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .form-check-label,
+html[data-funpay-dark="true"] .form-label,
+html[data-funpay-dark="true"] .col-form-label,
+html[data-funpay-dark="true"] legend {
+  color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .form-range::-webkit-slider-runnable-track {
+  background-color: var(--fp-surface-3) !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-link {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-item.active .page-link {
+  color: #fff !important;
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-item.disabled .page-link {
+  color: var(--fp-text-muted) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+/* Tooltips (ticket list previews use a custom class) */
+html[data-funpay-dark="true"] .tooltip .tooltip-inner {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border: 1px solid var(--fp-border);
+}
+
+html[data-funpay-dark="true"] .tooltip.bs-tooltip-auto .tooltip-arrow::before,
+html[data-funpay-dark="true"] .tooltip .tooltip-arrow::before {
+  border-top-color: var(--fp-surface-3) !important;
+  border-bottom-color: var(--fp-surface-3) !important;
+  border-left-color: var(--fp-surface-3) !important;
+  border-right-color: var(--fp-surface-3) !important;
+}
+
+/* Chat panel frames (funpay.com/chat) */
+/* FunPay рисует рамки вокруг панели чата и её блоков светлыми (#fff/#e6e6e6),
+   из-за чего на тёмном фоне остаётся белая рамка. Перекрываем все элементы
+   модуля чата сразу — по префиксу класса, чтобы не перечислять каждый. */
+html[data-funpay-dark="true"] .chat,
+html[data-funpay-dark="true"] .chat-float,
+html[data-funpay-dark="true"] [class*="chat-"],
+html[data-funpay-dark="true"] .bookmarks-empty,
+html[data-funpay-dark="true"] .bookmarks-nonempty {
+  border-color: var(--fp-border) !important;
+  outline: none !important;
+}
+
+html[data-funpay-dark="true"] [class*="chat-"]::before,
+html[data-funpay-dark="true"] [class*="chat-"]::after,
+html[data-funpay-dark="true"] .chat::before,
+html[data-funpay-dark="true"] .chat::after {
+  border-color: var(--fp-border) !important;
+}
+
+/* Светлые фоны внутри панели чата */
+html[data-funpay-dark="true"] .chat,
+html[data-funpay-dark="true"] .chat-message-container,
+html[data-funpay-dark="true"] .chat-message-list,
+html[data-funpay-dark="true"] .chat-empty,
+html[data-funpay-dark="true"] .chat-form,
+html[data-funpay-dark="true"] .chat-form-input {
+  background-color: var(--fp-surface) !important;
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .chat-header,
+html[data-funpay-dark="true"] .chat-form {
+  border-color: var(--fp-border) !important;
+}
+
+/* Тень возвращаем только на саму панель — если рамка была нарисована
+   box-shadow'ом сайта, она заменится нашей. */
+html[data-funpay-dark="true"] .chat {
+  box-shadow: var(--fp-shadow) !important;
+}
+
+html[data-funpay-dark="true"] .chat [class*="chat-"] {
+  box-shadow: none !important;
+}
+
+/* Фокусное кольцо браузера на автфокусе textarea выглядело белой рамкой */
+html[data-funpay-dark="true"] .chat textarea:focus,
+html[data-funpay-dark="true"] .chat .form-control:focus,
+html[data-funpay-dark="true"] .note-editable:focus {
+  outline: none !important;
+}
+
+/* Reviews (user profile pages) */
+html[data-funpay-dark="true"] .review-item,
+html[data-funpay-dark="true"] .review-list,
+html[data-funpay-dark="true"] .reviews-list,
+html[data-funpay-dark="true"] .review-item-row {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .review-item-row,
+html[data-funpay-dark="true"] .review-item-text,
+html[data-funpay-dark="true"] .review-item-date,
+html[data-funpay-dark="true"] .review-item-rating,
+html[data-funpay-dark="true"] .review-item-stars {
+  color: var(--fp-text-soft) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Ответ продавца — вложенный блок, раньше оставался белым с белым текстом */
+html[data-funpay-dark="true"] .review-item-answer,
+html[data-funpay-dark="true"] .review-compiled-reply,
+html[data-funpay-dark="true"] .review-item-answer .review-compiled-reply {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+  border-radius: 6px;
+}
+
+html[data-funpay-dark="true"] .review-item-answer a,
+html[data-funpay-dark="true"] .review-compiled-reply a,
+html[data-funpay-dark="true"] .review-item-text a {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .review-item-answer .h5,
+html[data-funpay-dark="true"] .review-item-row .h5,
+html[data-funpay-dark="true"] .review-item-row .h4 {
+  color: var(--fp-text) !important;
+}
+
+/* Любая светлая рамка внутри блока отзывов */
+html[data-funpay-dark="true"] [class*="review-"] {
+  border-color: var(--fp-border) !important;
+}
+
+/* Banners / ad placeholders (homepage) */
+/* Светлые баннерные и рекламные контейнеры FunPay; если картинка не загрузилась,
+   от блока остаётся яркий белый прямоугольник. */
+html[data-funpay-dark="true"] [class*="banner"],
+html[data-funpay-dark="true"] [class*="advert"],
+html[data-funpay-dark="true"] [class*="chips"] {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Пустая ссылка-растяжка (например, баннер /chips/244/, который не загрузился):
+   сайт красит её в белый. Делаем фон прозрачным — тогда видно тёмный родитель,
+   а background-image иконок/картинок, если он есть, остаётся. */
+html[data-funpay-dark="true"] a:empty {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+  outline: none !important;
+}
+
+html[data-funpay-dark="true"] a:empty::before,
+html[data-funpay-dark="true"] a:empty::after {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] img {
+  background-color: transparent;
+}
+
+/* Homepage promo blocks: у .promo-games-fav фон приходил от .bg-light-color,
+   а у .promo-games-all не задавался вовсе — из-за этого блоки отличались. */
+html[data-funpay-dark="true"] .promo-games,
+html[data-funpay-dark="true"] .promo-games-fav,
+html[data-funpay-dark="true"] .promo-games-all,
+html[data-funpay-dark="true"] .promo-games .content-with-cd {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-bg) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .promo-game-list-header,
+html[data-funpay-dark="true"] .promo-game-list-title {
+  color: var(--fp-text) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .promo-game-item {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Алфавитная навигация: при скролле к ней добавляются affix-классы, и сайт
+   красит «прилипшее» состояние в светлый фон — отсюда меняющийся цвет. */
+html[data-funpay-dark="true"] .nav-abc {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc.affix,
+html[data-funpay-dark="true"] .nav-abc.affix-top,
+html[data-funpay-dark="true"] .nav-abc.affix-bottom,
+html[data-funpay-dark="true"] .nav-abc.nav-abc-fixed {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-bg) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: 0 2px 0 var(--fp-border-soft) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc > ul > li > a,
+html[data-funpay-dark="true"] .nav-abc .nav > li > a {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc > ul > li > a:hover,
+html[data-funpay-dark="true"] .nav-abc > ul > li > a:focus,
+html[data-funpay-dark="true"] .nav-abc > ul > li.active > a,
+html[data-funpay-dark="true"] .nav-abc .nav > li.active > a {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+/* Header user menu: separators between dropdown items -----------------------
+   The site draws the lines between menu items with a light border:
+   `.dropdown-menu > li + li { border-top: #f2f2f2 1px solid }`
+   (and the same for nested submenus and the collapsed mobile navbar).
+   On a dark panel #f2f2f2 looks like a bright white line, so the colour is
+   swapped for the theme border colour instead of the border being removed. */
+html[data-funpay-dark="true"] .dropdown-menu > li + li,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li,
+html[data-funpay-dark="true"] .navbar-nav > li > a,
+html[data-funpay-dark="true"] .navbar-nav .open > a,
+html[data-funpay-dark="true"] .navbar-nav .open .dropdown-menu > li:first-child,
+html[data-funpay-dark="true"] .dropdown-menu.dropdown-autocomplete,
+html[data-funpay-dark="true"] .dropdown-menu > li,
+html[data-funpay-dark="true"] .dropdown-menu > li > a,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li > a {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .dropdown-menu > li > a,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li > a {
+  box-shadow: none !important;
+}
+
+/* Nested submenus (languages, currencies) reuse the same dark panel */
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu {
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+/* The site paints the current item with a white background */
+html[data-funpay-dark="true"] .navbar-nav > li > .dropdown-menu > .active > a,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a:hover,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a:focus {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+/* Tabs: the active tab underline was drawn with #222 and vanished on dark */
+html[data-funpay-dark="true"] .nav-tabs > li.active > a::before {
+  background: var(--fp-blue) !important;
+}
+
+/* Withdraw modal (balance page) -------------------------------------------
+   The site puts the close button outside .modal-content
+   (.modal-dialog .close { position: absolute; top: -40px; right: 0;
+   color: #fff; font-size: 36px }) — the theme drew it as a bare glyph on a
+   generic button background. It now gets an explicit small square chip. */
+@media (min-width: 768px) {
+  html[data-funpay-dark="true"] .modal-dialog > .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0 !important;
+    top: -44px;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--fp-text-soft) !important;
+    background-color: var(--fp-surface-2) !important;
+    border: 1px solid var(--fp-border) !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  html[data-funpay-dark="true"] .modal-dialog > .close:hover,
+  html[data-funpay-dark="true"] .modal-dialog > .close:focus {
+    color: var(--fp-text) !important;
+    background-color: var(--fp-surface-3) !important;
+    border-color: #3b4653 !important;
+  }
+}
+
+/* Table separators --------------------------------------------------------
+   The site draws them on the cells, not on the rows:
+   .tc-header > div { border-bottom: #eaeaea 1px solid }
+   (mobile: .tc-finance { border-top: ... }, .tc-finance .tc-item { border-top: ... }).
+   The theme only recoloured .tc-header / .tc-item, so those cell borders
+   stayed light. */
+html[data-funpay-dark="true"] .tc-header > div,
+html[data-funpay-dark="true"] .tc-header > [class^="col-"],
+html[data-funpay-dark="true"] .tc-header > [class*=" col-"],
+html[data-funpay-dark="true"] .tc-item > div,
+html[data-funpay-dark="true"] .tc-item > [class^="col-"],
+html[data-funpay-dark="true"] .tc-item > [class*=" col-"],
+html[data-funpay-dark="true"] .tc-finance,
+html[data-funpay-dark="true"] .tc-finance .tc-item,
+html[data-funpay-dark="true"] .tc-short .tc-item,
+html[data-funpay-dark="true"] .tc-selling-divider {
+  border-color: var(--fp-border-soft) !important;
+}

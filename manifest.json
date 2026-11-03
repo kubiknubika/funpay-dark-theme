@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "FunPay Dark Theme",
-  "version": "1.0.0",
-  "description": "Тёмная AMOLED-тема для funpay.com.",
+  "version": "1.6.2",
+  "description": "Тёмная AMOLED-тема для funpay.com и support.funpay.com.",
   "permissions": ["storage"],
   "action": {
     "default_title": "FunPay Dark Theme",
@@ -20,5 +20,14 @@
       "js": ["content.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "funpay-dark-theme@funpay-dark-theme.github.io",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 }
