@@ -699,3 +699,311 @@ html[data-funpay-dark="true"] .note-modal .modal-footer {
   background-color: var(--fp-surface) !important;
   border-color: var(--fp-border) !important;
 }
+
+/* Support portal (support.funpay.com — Bootstrap 5) */
+html[data-funpay-dark="true"] .ticket-card,
+html[data-funpay-dark="true"] .ticket-main-panel,
+html[data-funpay-dark="true"] .ticket-list,
+html[data-funpay-dark="true"] .ticket-comments,
+html[data-funpay-dark="true"] .comment-form-wrapper,
+html[data-funpay-dark="true"] .comment-form,
+html[data-funpay-dark="true"] .search-form {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-info-panel,
+html[data-funpay-dark="true"] .sticky-info-panel {
+  color: var(--fp-text) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-main-panel,
+html[data-funpay-dark="true"] .ticket-comments,
+html[data-funpay-dark="true"] .comment-form-wrapper,
+html[data-funpay-dark="true"] .search-form {
+  background-color: transparent !important;
+}
+
+/* Ticket list rows */
+html[data-funpay-dark="true"] .ticket-item {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item:hover,
+html[data-funpay-dark="true"] .ticket-item:focus,
+html[data-funpay-dark="true"] .ticket-item.active {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item .text-primary {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .ticket-item .text-secondary {
+  color: var(--fp-text-muted) !important;
+}
+
+/* Single ticket: comments */
+html[data-funpay-dark="true"] .ticket-head-buttons,
+html[data-funpay-dark="true"] .ticket-comment,
+html[data-funpay-dark="true"] .comment-container,
+html[data-funpay-dark="true"] .comment-author,
+html[data-funpay-dark="true"] .comment-text {
+  color: var(--fp-text) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .comment-body,
+html[data-funpay-dark="true"] .bg-light-subtle {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .bg-primary-subtle {
+  color: var(--fp-text) !important;
+  background-color: rgba(53, 108, 167, .22) !important;
+  border-color: rgba(92, 155, 230, .35) !important;
+}
+
+html[data-funpay-dark="true"] .comment-username .username,
+html[data-funpay-dark="true"] .comment-author .username {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .comment-username span:not(.username),
+html[data-funpay-dark="true"] .comment-author span:not(.username) {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .comment-text a,
+html[data-funpay-dark="true"] .comment-body a {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .comment-fake-input {
+  color: #738091 !important;
+  background-color: var(--fp-surface-2) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .comment-fake-input:hover,
+html[data-funpay-dark="true"] .comment-fake-input:focus {
+  border-color: var(--fp-blue) !important;
+}
+
+/* Bootstrap 5 buttons on the portal (outline/light variants) */
+/* body в селекторе нужен, чтобы гарантированно перебить общее правило для
+   button:not(.btn-primary):not(.btn-link) выше по файлу, не полагаясь на порядок. */
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary,
+html[data-funpay-dark="true"] body a.btn.btn-outline-primary {
+  color: var(--fp-blue) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-blue) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary:hover,
+html[data-funpay-dark="true"] body button.btn.btn-outline-primary:focus,
+html[data-funpay-dark="true"] body a.btn.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary,
+html[data-funpay-dark="true"] body button.btn.btn-light,
+html[data-funpay-dark="true"] body a.btn.btn-outline-secondary,
+html[data-funpay-dark="true"] body a.btn.btn-light {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary:hover,
+html[data-funpay-dark="true"] body button.btn.btn-outline-secondary:focus,
+html[data-funpay-dark="true"] body button.btn.btn-light:hover,
+html[data-funpay-dark="true"] body button.btn.btn-light:focus,
+html[data-funpay-dark="true"] body a.btn.btn-outline-secondary:hover,
+html[data-funpay-dark="true"] body a.btn.btn-light:hover {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: #3b4653 !important;
+}
+
+html[data-funpay-dark="true"] body .btn.btn-outline-danger,
+html[data-funpay-dark="true"] body button.btn.btn-outline-danger {
+  color: var(--fp-red) !important;
+  background-color: transparent !important;
+  border-color: rgba(237, 115, 115, .55) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] body .btn.btn-outline-danger:hover,
+html[data-funpay-dark="true"] body .btn.btn-outline-danger:focus,
+html[data-funpay-dark="true"] body button.btn.btn-outline-danger:hover {
+  color: #fff !important;
+  background-color: #a83c3c !important;
+  border-color: #a83c3c !important;
+}
+
+/* Badges / status pills */
+html[data-funpay-dark="true"] .badge {
+  color: var(--fp-text) !important;
+  border: 1px solid transparent;
+}
+
+html[data-funpay-dark="true"] .badge.bg-success,
+html[data-funpay-dark="true"] .bg-success.badge {
+  color: #9ce5b8 !important;
+  background-color: rgba(52, 125, 82, .28) !important;
+  border-color: rgba(98, 197, 138, .4) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-danger,
+html[data-funpay-dark="true"] .bg-danger.badge,
+html[data-funpay-dark="true"] .badge.bg-warning,
+html[data-funpay-dark="true"] .bg-warning.badge {
+  color: #ffb4b4 !important;
+  background-color: rgba(135, 53, 53, .28) !important;
+  border-color: rgba(237, 115, 115, .4) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-secondary,
+html[data-funpay-dark="true"] .bg-secondary.badge,
+html[data-funpay-dark="true"] .badge.bg-light,
+html[data-funpay-dark="true"] .bg-light.badge {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .badge.bg-primary,
+html[data-funpay-dark="true"] .bg-primary.badge {
+  color: #cfe4fb !important;
+  background-color: rgba(53, 108, 167, .45) !important;
+  border-color: rgba(92, 155, 230, .45) !important;
+}
+
+/* Bootstrap 5 utilities that would otherwise stay light */
+html[data-funpay-dark="true"] .bg-white,
+html[data-funpay-dark="true"] .bg-light,
+html[data-funpay-dark="true"] .bg-body,
+html[data-funpay-dark="true"] .bg-body-tertiary,
+html[data-funpay-dark="true"] .bg-body-secondary {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+html[data-funpay-dark="true"] .text-primary {
+  color: var(--fp-blue) !important;
+}
+
+html[data-funpay-dark="true"] .text-secondary {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .text-dark,
+html[data-funpay-dark="true"] .text-body,
+html[data-funpay-dark="true"] .text-body-emphasis {
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .text-body-secondary,
+html[data-funpay-dark="true"] .text-body-tertiary,
+html[data-funpay-dark="true"] .text-black-50 {
+  color: var(--fp-text-muted) !important;
+}
+
+html[data-funpay-dark="true"] .border,
+html[data-funpay-dark="true"] .border-top,
+html[data-funpay-dark="true"] .border-bottom,
+html[data-funpay-dark="true"] .border-start,
+html[data-funpay-dark="true"] .border-end {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .card,
+html[data-funpay-dark="true"] .card-header,
+html[data-funpay-dark="true"] .card-body,
+html[data-funpay-dark="true"] .list-group-item,
+html[data-funpay-dark="true"] .accordion-item,
+html[data-funpay-dark="true"] .accordion-button,
+html[data-funpay-dark="true"] .accordion-button:not(.collapsed) {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .accordion-button:not(.collapsed) {
+  background-color: var(--fp-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-funpay-dark="true"] .input-group-text {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface-3) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .form-check-input {
+  background-color: var(--fp-surface-3) !important;
+  border-color: #4a5663 !important;
+}
+
+html[data-funpay-dark="true"] .form-check-input:checked {
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .form-check-label,
+html[data-funpay-dark="true"] .form-label,
+html[data-funpay-dark="true"] .col-form-label,
+html[data-funpay-dark="true"] legend {
+  color: var(--fp-text-soft) !important;
+}
+
+html[data-funpay-dark="true"] .form-range::-webkit-slider-runnable-track {
+  background-color: var(--fp-surface-3) !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-link {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-item.active .page-link {
+  color: #fff !important;
+  background-color: #3676bd !important;
+  border-color: #3676bd !important;
+}
+
+html[data-funpay-dark="true"] .pagination .page-item.disabled .page-link {
+  color: var(--fp-text-muted) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+/* Tooltips (ticket list previews use a custom class) */
+html[data-funpay-dark="true"] .tooltip .tooltip-inner {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-3) !important;
+  border: 1px solid var(--fp-border);
+}
+
+html[data-funpay-dark="true"] .tooltip.bs-tooltip-auto .tooltip-arrow::before,
+html[data-funpay-dark="true"] .tooltip .tooltip-arrow::before {
+  border-top-color: var(--fp-surface-3) !important;
+  border-bottom-color: var(--fp-surface-3) !important;
+  border-left-color: var(--fp-surface-3) !important;
+  border-right-color: var(--fp-surface-3) !important;
+}
