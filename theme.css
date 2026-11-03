@@ -1193,3 +1193,47 @@ html[data-funpay-dark="true"] .nav-abc .nav > li.active > a {
   color: var(--fp-text) !important;
   background-color: var(--fp-surface-2) !important;
 }
+
+/* Header user menu: separators between dropdown items -----------------------
+   The site draws the lines between menu items with a light border:
+   `.dropdown-menu > li + li { border-top: #f2f2f2 1px solid }`
+   (and the same for nested submenus and the collapsed mobile navbar).
+   On a dark panel #f2f2f2 looks like a bright white line, so the colour is
+   swapped for the theme border colour instead of the border being removed. */
+html[data-funpay-dark="true"] .dropdown-menu > li + li,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li,
+html[data-funpay-dark="true"] .navbar-nav > li > a,
+html[data-funpay-dark="true"] .navbar-nav .open > a,
+html[data-funpay-dark="true"] .navbar-nav .open .dropdown-menu > li:first-child,
+html[data-funpay-dark="true"] .dropdown-menu.dropdown-autocomplete,
+html[data-funpay-dark="true"] .dropdown-menu > li,
+html[data-funpay-dark="true"] .dropdown-menu > li > a,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li > a {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .dropdown-menu > li > a,
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu > li > a {
+  box-shadow: none !important;
+}
+
+/* Nested submenus (languages, currencies) reuse the same dark panel */
+html[data-funpay-dark="true"] .dropdown-menu .dropdown-menu {
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: none !important;
+}
+
+/* The site paints the current item with a white background */
+html[data-funpay-dark="true"] .navbar-nav > li > .dropdown-menu > .active > a,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a:hover,
+html[data-funpay-dark="true"] .dropdown-menu > .active > a:focus {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
+
+/* Tabs: the active tab underline was drawn with #222 and vanished on dark */
+html[data-funpay-dark="true"] .nav-tabs > li.active > a::before {
+  background: var(--fp-blue) !important;
+}
