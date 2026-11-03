@@ -1136,3 +1136,60 @@ html[data-funpay-dark="true"] a:empty::after {
 html[data-funpay-dark="true"] img {
   background-color: transparent;
 }
+
+/* Homepage promo blocks: у .promo-games-fav фон приходил от .bg-light-color,
+   а у .promo-games-all не задавался вовсе — из-за этого блоки отличались. */
+html[data-funpay-dark="true"] .promo-games,
+html[data-funpay-dark="true"] .promo-games-fav,
+html[data-funpay-dark="true"] .promo-games-all,
+html[data-funpay-dark="true"] .promo-games .content-with-cd {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-bg) !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .promo-game-list-header,
+html[data-funpay-dark="true"] .promo-game-list-title {
+  color: var(--fp-text) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .promo-game-item {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Алфавитная навигация: при скролле к ней добавляются affix-классы, и сайт
+   красит «прилипшее» состояние в светлый фон — отсюда меняющийся цвет. */
+html[data-funpay-dark="true"] .nav-abc {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc.affix,
+html[data-funpay-dark="true"] .nav-abc.affix-top,
+html[data-funpay-dark="true"] .nav-abc.affix-bottom,
+html[data-funpay-dark="true"] .nav-abc.nav-abc-fixed {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-bg) !important;
+  border-color: var(--fp-border) !important;
+  box-shadow: 0 2px 0 var(--fp-border-soft) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc > ul > li > a,
+html[data-funpay-dark="true"] .nav-abc .nav > li > a {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] .nav-abc > ul > li > a:hover,
+html[data-funpay-dark="true"] .nav-abc > ul > li > a:focus,
+html[data-funpay-dark="true"] .nav-abc > ul > li.active > a,
+html[data-funpay-dark="true"] .nav-abc .nav > li.active > a {
+  color: var(--fp-text) !important;
+  background-color: var(--fp-surface-2) !important;
+}
