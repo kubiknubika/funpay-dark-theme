@@ -1007,3 +1007,56 @@ html[data-funpay-dark="true"] .tooltip .tooltip-arrow::before {
   border-left-color: var(--fp-surface-3) !important;
   border-right-color: var(--fp-surface-3) !important;
 }
+
+/* Chat panel frames (funpay.com/chat) */
+/* FunPay рисует рамки вокруг панели чата и её блоков светлыми (#fff/#e6e6e6),
+   из-за чего на тёмном фоне остаётся белая рамка. Перекрываем все элементы
+   модуля чата сразу — по префиксу класса, чтобы не перечислять каждый. */
+html[data-funpay-dark="true"] .chat,
+html[data-funpay-dark="true"] .chat-float,
+html[data-funpay-dark="true"] [class*="chat-"],
+html[data-funpay-dark="true"] .bookmarks-empty,
+html[data-funpay-dark="true"] .bookmarks-nonempty {
+  border-color: var(--fp-border) !important;
+  outline: none !important;
+}
+
+html[data-funpay-dark="true"] [class*="chat-"]::before,
+html[data-funpay-dark="true"] [class*="chat-"]::after,
+html[data-funpay-dark="true"] .chat::before,
+html[data-funpay-dark="true"] .chat::after {
+  border-color: var(--fp-border) !important;
+}
+
+/* Светлые фоны внутри панели чата */
+html[data-funpay-dark="true"] .chat,
+html[data-funpay-dark="true"] .chat-message-container,
+html[data-funpay-dark="true"] .chat-message-list,
+html[data-funpay-dark="true"] .chat-empty,
+html[data-funpay-dark="true"] .chat-form,
+html[data-funpay-dark="true"] .chat-form-input {
+  background-color: var(--fp-surface) !important;
+  color: var(--fp-text) !important;
+}
+
+html[data-funpay-dark="true"] .chat-header,
+html[data-funpay-dark="true"] .chat-form {
+  border-color: var(--fp-border) !important;
+}
+
+/* Тень возвращаем только на саму панель — если рамка была нарисована
+   box-shadow'ом сайта, она заменится нашей. */
+html[data-funpay-dark="true"] .chat {
+  box-shadow: var(--fp-shadow) !important;
+}
+
+html[data-funpay-dark="true"] .chat [class*="chat-"] {
+  box-shadow: none !important;
+}
+
+/* Фокусное кольцо браузера на автфокусе textarea выглядело белой рамкой */
+html[data-funpay-dark="true"] .chat textarea:focus,
+html[data-funpay-dark="true"] .chat .form-control:focus,
+html[data-funpay-dark="true"] .note-editable:focus {
+  outline: none !important;
+}
