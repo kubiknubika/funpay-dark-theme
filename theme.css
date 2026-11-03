@@ -1106,3 +1106,33 @@ html[data-funpay-dark="true"] .review-item-row .h4 {
 html[data-funpay-dark="true"] [class*="review-"] {
   border-color: var(--fp-border) !important;
 }
+
+/* Banners / ad placeholders (homepage) */
+/* Светлые баннерные и рекламные контейнеры FunPay; если картинка не загрузилась,
+   от блока остаётся яркий белый прямоугольник. */
+html[data-funpay-dark="true"] [class*="banner"],
+html[data-funpay-dark="true"] [class*="advert"],
+html[data-funpay-dark="true"] [class*="chips"] {
+  color: var(--fp-text-soft) !important;
+  background-color: var(--fp-surface) !important;
+  border-color: var(--fp-border) !important;
+}
+
+/* Пустая ссылка-растяжка (например, баннер /chips/244/, который не загрузился):
+   сайт красит её в белый. Делаем фон прозрачным — тогда видно тёмный родитель,
+   а background-image иконок/картинок, если он есть, остаётся. */
+html[data-funpay-dark="true"] a:empty {
+  color: var(--fp-text-soft) !important;
+  background-color: transparent !important;
+  border-color: var(--fp-border) !important;
+  outline: none !important;
+}
+
+html[data-funpay-dark="true"] a:empty::before,
+html[data-funpay-dark="true"] a:empty::after {
+  border-color: var(--fp-border) !important;
+}
+
+html[data-funpay-dark="true"] img {
+  background-color: transparent;
+}
