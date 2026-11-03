@@ -1237,3 +1237,53 @@ html[data-funpay-dark="true"] .dropdown-menu > .active > a:focus {
 html[data-funpay-dark="true"] .nav-tabs > li.active > a::before {
   background: var(--fp-blue) !important;
 }
+
+/* Withdraw modal (balance page) -------------------------------------------
+   The site puts the close button outside .modal-content
+   (.modal-dialog .close { position: absolute; top: -40px; right: 0;
+   color: #fff; font-size: 36px }) — the theme drew it as a bare glyph on a
+   generic button background. It now gets an explicit small square chip. */
+@media (min-width: 768px) {
+  html[data-funpay-dark="true"] .modal-dialog > .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0 !important;
+    top: -44px;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--fp-text-soft) !important;
+    background-color: var(--fp-surface-2) !important;
+    border: 1px solid var(--fp-border) !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  html[data-funpay-dark="true"] .modal-dialog > .close:hover,
+  html[data-funpay-dark="true"] .modal-dialog > .close:focus {
+    color: var(--fp-text) !important;
+    background-color: var(--fp-surface-3) !important;
+    border-color: #3b4653 !important;
+  }
+}
+
+/* Table separators --------------------------------------------------------
+   The site draws them on the cells, not on the rows:
+   .tc-header > div { border-bottom: #eaeaea 1px solid }
+   (mobile: .tc-finance { border-top: ... }, .tc-finance .tc-item { border-top: ... }).
+   The theme only recoloured .tc-header / .tc-item, so those cell borders
+   stayed light. */
+html[data-funpay-dark="true"] .tc-header > div,
+html[data-funpay-dark="true"] .tc-header > [class^="col-"],
+html[data-funpay-dark="true"] .tc-header > [class*=" col-"],
+html[data-funpay-dark="true"] .tc-item > div,
+html[data-funpay-dark="true"] .tc-item > [class^="col-"],
+html[data-funpay-dark="true"] .tc-item > [class*=" col-"],
+html[data-funpay-dark="true"] .tc-finance,
+html[data-funpay-dark="true"] .tc-finance .tc-item,
+html[data-funpay-dark="true"] .tc-short .tc-item,
+html[data-funpay-dark="true"] .tc-selling-divider {
+  border-color: var(--fp-border-soft) !important;
+}
